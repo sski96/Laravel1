@@ -19,7 +19,7 @@
                     <input type="number" class="form-control" name="no_telp_petugas" placeholder="Input No Telepon Petugas">
                     <label for="exampleInputEmail1">Alamat Petugas</label>
                     <input type="text" class="form-control" name="alamat_petugas" placeholder="Input Alamat Petugas">
-                  </div>
+</div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
@@ -27,5 +27,5 @@
                 </div>
               </form>
             </div>
-
+</div>
 @endsection

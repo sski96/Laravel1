@@ -20,7 +20,7 @@ use App\Http\Controllers\PetugasController;
 
 Route::get('/', function () {
     return view('template.master');
-})->name('blank_page');
+});
 
 // Route::get('/', [AuthorController::class, 'master'])->name('master');
 // Route::get('/anggota', [AnggotaController::class, 'anggota'])->name('anggota');
