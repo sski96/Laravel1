@@ -16,11 +16,11 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  @include('template.separate.navbar')
+  @include('template.navbar')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  @include('template.separate.sidebar')
+  @include('template.sidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -29,7 +29,7 @@
   <!-- /.content-wrapper -->
 
   <!-- futer -->
-  @include('template.separate.futer')
+  @include('template.futer')
   <!-- /.futer -->
 
   <!-- Control Sidebar -->
