@@ -33,6 +33,7 @@
             </button>
           </div>
         </div>
+      </div>
         <div class="card-body">
           Start creating your amazing application!
         </div>
@@ -46,4 +47,4 @@
 
     </section>
     <!-- /.content -->
-  </div>
+</div>

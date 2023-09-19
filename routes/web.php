@@ -30,9 +30,11 @@ Route::get('/', function () {
 // Route::get('/buku', [BukuController::class, 'buku'])->name('buku');
 // Route::get('/petugas', [PetugasController::class, 'petugas'])->name('petugas');
 
-Route::get('/anggota', [AnggotaController::class, 'create'])->name('anggota');
-Route::get('/buku', [BukuController::class, 'create'])->name('buku');
-Route::get('/petugas', [PetugasController::class, 'create'])->name('petugas');
-Route::get('/rak', [RakController::class, 'create'])->name('rak');
-Route::get('/peminjaman', [PeminjamanController::class, 'create'])->name('peminjaman');
-Route::get('/pengembalian', [PengembalianController::class, 'create'])->name('pengembalian');
+Route::resource('/anggota', AnggotaController::class);
+Route::resource('/petugas', PetugasController::class);
+Route::resource('/buku', BukuController::class);
+Route::resource('/rak', RakController::class);
+Route::resource('/peminjaman', PeminjamanController::class);
+Route::resource('/pengembalian', PengembalianController::class);
+
+// Route::resource('/anggota',AnggotaController::class);
