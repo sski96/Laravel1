@@ -68,11 +68,7 @@
                       <a href="{{ route('anggota.edit', $value->id) }}" class="btn btn-sm btn-warning" style="margin-left: 8px;">
                         Edit
                       </a>
-                      <form action="{{ route('anggota.destroy', $value->id) }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger" style="margin-left: 8px;">Hapus</button>
-                      </form>
+                      <a href="" type="sumbit" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal" style="margin-left: 8px;">Delete</a>
                       </div>
                     </td>
                   </tr>
@@ -91,7 +87,26 @@
     <!-- /.container-fluid -->
   </section>
   <!-- /.content -->
-  
+  <div class="modal" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Peringatan</h5>
+      </div>
+      <div class="modal-body">
+        <p>Apakah Anda Yakin Akan Menghapus Data Anggota</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <form action="{{ route('anggota.destroy', $value->id) }}" method="POST">
+            @csrf
+            @method('DELETE')
+              <button type="submit" class="btn btn-sm btn-danger" style="margin-left: 8px;">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
 
 @push('script')

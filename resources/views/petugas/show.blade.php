@@ -25,7 +25,7 @@
           <!-- general form elements -->
           <div class="card card-info">
             <div class="card-header">
-              <h3 class="card-title">Form Input Petugas</h3>
+              <h3 class="card-title">Form Detail Petugas</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->

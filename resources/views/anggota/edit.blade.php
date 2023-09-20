@@ -25,7 +25,7 @@
           <!-- general form elements -->
           <div class="card card-info">
             <div class="card-header">
-              <h3 class="card-title">Form Input Anggota</h3>
+              <h3 class="card-title">Form Update Data Anggota</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
@@ -91,7 +91,7 @@
               <!-- /.card-body -->
               <div class="card-footer">
                 <button type="submit" class="btn btn-warning">Update</button>
-                <a href="{{ route('anggota.index') }}" class="btn btn-secondary" style="margin-left: 8px;">Back</a>
+                <a href="" class="btn btn-secondary" style="margin-left: 8px;" data-toggle="modal" data-target="#exampleModal">Back</a>
               </div>
             </form>
           </div>
@@ -104,5 +104,20 @@
     <!-- /.container-fluid -->
   </section>
   <!-- /.content -->
-
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Peringatan</h5>
+        </div>
+        <div class="modal-body">
+          <p>Apakah Anda Yakin Akan Keluar Dari Form Update Data Anggota</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <a href="{{ route('anggota.index') }}" type="button" class="btn btn-primary">Yes</a>
+        </div>
+      </div>
+   </div>
+</div>
 @endsection
